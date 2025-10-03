@@ -15,6 +15,8 @@ pub fn build(b: *std.Build) void {
 
     const new = b.option(bool, "new", "whether to use the new allocator");
     exe.root_module.strip = b.option(bool, "strip", "remove debug info");
+    exe.use_llvm = b.option(bool, "llvm", "use the llvm backend");
+    exe.use_lld = b.option(bool, "lld", "use the lld linker");
 
     const options = b.addOptions();
     options.addOption(bool, "new", new orelse false);
