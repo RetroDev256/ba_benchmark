@@ -1,0 +1,17 @@
+.{
+    .name = .ba_benchmark,
+    .version = "0.0.0",
+    .fingerprint = 0x37fcfc95e502562d,
+    .minimum_zig_version = "0.16.0-dev.577+c50aa2b95",
+    .dependencies = .{
+        .bump_alloc = .{
+            .url = "git+https://github.com/RetroDev256/bump_alloc#bfccd83ee4da39fa8535d665563e4dfb9ab7cc2b",
+            .hash = "bump_alloc-0.0.1-_NRXHMsWAABkC4QK_wYGjpwMiAa0iPondEK0FnFw8DiV",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
